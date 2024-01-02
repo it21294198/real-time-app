@@ -5,7 +5,10 @@
 /.pnp
 .pnp.js
 
+# config files
 /src/db.js
+/src/imgStore.js
+
 # testing
 /coverage
 
