@@ -6,14 +6,15 @@ import { AdvancedImage, responsive, placeholder } from "@cloudinary/react";
 import cloudinaryConfig from "../imgStore";
 
 export default function CloudinaryView() {
+
+  // This publicId can be used to store the URL of image
   const [publicId, setPublicId] = useState("");
 
   // Replace with your own cloud name
   const cloudName = cloudinaryConfig.cloudName;
-  // const [cloudName] = useState("dtf8ixgxe");
+
   // Replace with your own upload preset
   const uploadPreset = cloudinaryConfig.uploadPreset
-  // const [uploadPreset] = useState("v9zvvyrr");
 
   const [uwConfig] = useState({
     cloudName,
